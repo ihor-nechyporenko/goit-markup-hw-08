@@ -1,0 +1,51 @@
+.specialization-section {
+    padding-bottom: 94px;
+}
+
+.specialization {
+    display: flex;
+
+    & li:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.specialization-list {
+    position: relative;
+}
+
+.specialization-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+
+    display: block;
+    text-align: center;
+
+    font-family: $roboto-font, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $primary-bg-color;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.section-title {
+    margin-bottom: 50px;
+
+    font-family: $roboto-font, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: $title-text-color;
+}
