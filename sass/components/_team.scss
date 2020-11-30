@@ -13,10 +13,23 @@
 }
 
 .section-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     
     background-color: $primary-button-color;
+}
+
+.team-title {
+    margin-bottom: 30px;
+
+    font-family: $roboto-font, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: $title-text-color;
 }
 
 .team-item {
@@ -31,10 +44,10 @@
 }
 
 .team-flexbox {
-    display: flex;
+    // display: flex;
 
     & > li:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 }
 

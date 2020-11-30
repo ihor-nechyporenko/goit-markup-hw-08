@@ -1,11 +1,12 @@
 .feature-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .feature {
     margin-bottom: 10px;
-
+    
+    text-align: center;
     font-family: $roboto-font, sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -17,7 +18,6 @@
 
 .feature-text {
     margin-bottom: 0px;
-    width: 270px;
 
     font-family: $roboto-font, sans-serif;
     font-weight: 400;
@@ -27,10 +27,10 @@
 }
 
 .feature-flexbox {
-    display: flex;
+//     // display: flex;
 
     & li:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 }
 

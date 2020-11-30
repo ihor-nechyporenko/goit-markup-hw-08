@@ -1,18 +1,18 @@
 .hero-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
 }
 
-.hero {
-    max-width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-}
+// .hero {
+//     max-width: 696px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
 
 .overlay {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 
@@ -29,11 +29,12 @@
 
 .hero-title {
     margin-bottom: 30px;
+    padding: 0px 60px;
 
     font-family: $roboto-font, sans-serif;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
