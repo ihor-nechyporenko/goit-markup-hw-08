@@ -40,20 +40,6 @@
     font-style: normal;
 }
 
-.join {
-    margin-bottom: 20px;
-
-    font-family: $roboto-font, sans-serif;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-align: center;
-
-    text-transform: uppercase;
-    color: $primary-bg-color;
-}
-
 .our-social-links {
     display: flex;
     width: 44px;
@@ -77,10 +63,15 @@
 //     display: flex;
 // }
 
-// .address-container {
-//     margin-right: 70px;
-// }
+.address-container {
+    margin-bottom: 60px;
+}
 
 .join-container {
     padding-top: 12px;
+}
+
+.social--footer {
+    padding: 0;
+    margin-bottom: 60px;
 }

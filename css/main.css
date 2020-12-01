@@ -61,7 +61,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid orangered 1px;
 }
 
 @media screen and (min-width: 480px) {
@@ -82,15 +81,53 @@ body {
   }
 }
 
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+footer .logo {
+  display: block;
+  text-align: center;
+}
+
+.logo-header {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .hero-section {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
 }
 
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .overlay {
-  max-width: 480px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-img.jpg);
@@ -343,7 +380,7 @@ body {
 }
 
 .clients-item {
-  width: calc((100% - 2 * 15px) / 2);
+  width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
 }
 
@@ -419,18 +456,6 @@ body {
   font-style: normal;
 }
 
-.join {
-  margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
 .our-social-links {
   display: flex;
   width: 44px;
@@ -447,8 +472,29 @@ body {
   background-color: #2196F3;
 }
 
+.address-container {
+  margin-bottom: 60px;
+}
+
 .join-container {
   padding-top: 12px;
+}
+
+.social--footer {
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.join {
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .subscribe-container {
@@ -456,13 +502,13 @@ body {
 }
 
 .subscribe-container input {
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 16px;
   padding-left: 16px;
+  margin-bottom: 20px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -524,5 +570,10 @@ body {
 .form-footer {
   display: flex;
   align-items: center;
+}
+
+.form-footer form {
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
