@@ -18,27 +18,18 @@
 
 .clients-item {
     width: calc((100% - 2 * 15px) / 2);
-    // margin: 15px;
+    margin: 15px;
 }
 
 .clients-flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    // margin: -15px;
 
-
-    // & > li:not(:last-child) {
-    //     margin-right: 30px;
-    // }
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap; 
+        margin: -15px;
+    }
 }
 
-// @media screen and (min-width: 480px) {
-//     .clients-flexbox > li {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin: -15px;
-//     }
-// }
 
 .clients-icon {
     fill: #AFB1B8;
@@ -57,11 +48,6 @@
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // @media screen and (max-width: 479px) {
-    //     width: calc((100% - 2 * 30px) / 2);
-    //     margin: 15px;
-    // }
-
     &:hover .clients-icon,
     &:focus .clients-icon {
         fill: $accent-color;
@@ -72,21 +58,3 @@
         border-color: $accent-color;
     }
 }
-
-// @media screen and (min-width: 480px) {
-//     .clients-flexbox > li {
-//         width: calc((100% - 2 * 15px) / 2);
-//         margin: 15px;
-//     }
-
-//     .clients-link {
-//         width: 100%;
-//     }
-// }
-
-// @media screen and (min-width: 480px) {
-//     .clients-link {
-//         width: calc((100% - 2 * 15px) / 2);
-//         margin: 15px;
-//     }
-// }

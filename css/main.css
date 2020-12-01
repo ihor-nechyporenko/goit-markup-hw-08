@@ -61,6 +61,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: solid orangered 1px;
 }
 
 @media screen and (min-width: 480px) {
@@ -343,11 +344,15 @@ body {
 
 .clients-item {
   width: calc((100% - 2 * 15px) / 2);
+  margin: 15px;
 }
 
-.clients-flexbox {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 480px) {
+  .clients-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .clients-icon {
