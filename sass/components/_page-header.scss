@@ -1,7 +1,46 @@
-// .nav {
-//     display: flex;
-//     align-items: center;
-// }
+.menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .icon-cross {
+        display: none;
+    }
+}
+
+.menu-btn.is-open .icon-cross {
+    display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border-top: solid #ECECEC 1px;
+
+    background-color: $primary-bg-color;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+header {
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
 
 // .header {
 //     display: flex;

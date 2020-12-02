@@ -13,17 +13,25 @@
         <div class="container header">
             <nav class="nav">
                 <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
-                <ul class="list site-nav">
-                    <li>
-                        <a href="./index.html" class="nav-link current">Студия</a>
-                    </li>
-                    <li>
-                        <a href="./portfolio.html" class="nav-link">Портфолио</a>
-                    </li>
-                    <li>
-                        <a href="#contacts" class="nav-link">Контакты</a>
-                    </li>
-                </ul>
+                <button type='button' class="menu-btn is-open" data-menu-button>
+                    <svg width='40' height='40' aria-label="Переключатель мобильного меню" aria-expanded="false" aria-controls="menu-container">
+                        <use class="icon-menu" href='./imeges/icons/sprite.svg#icon-menu'></use>
+                        <use class="icon-cross" href='./imeges/icons/sprite.svg#icon-cross'></use>
+                    </svg>
+                </button>
+                <div class="menu-container is-open" id="menu-container" data-menu>
+                    <ul class="list site-nav">
+                        <li>
+                            <a href="./index.html" class="nav-link current">Студия</a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html" class="nav-link">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="#contacts" class="nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
     
                 <ul class="list contacts">
@@ -438,6 +446,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
    
 </body>
 </html>
