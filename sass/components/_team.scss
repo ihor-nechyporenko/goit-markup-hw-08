@@ -1,22 +1,13 @@
-.team {
-    margin-top: 30px;
-    margin-bottom: 10px;
-
-    font-family: $roboto-font, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.187;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: $title-text-color;
-}
-
 .section-team {
     padding-top: 60px;
     padding-bottom: 60px;
     
     background-color: $primary-button-color;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .team-title {
@@ -29,6 +20,25 @@
     text-align: center;
     letter-spacing: 0.03em;
     
+    color: $title-text-color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.667;
+    }
+}
+
+.team {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-family: $roboto-font, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+
     color: $title-text-color;
 }
 
@@ -44,10 +54,20 @@
 }
 
 .team-flexbox {
-    // display: flex;
 
-    & > li:not(:last-child) {
-        margin-bottom: 30px;
+    // & > li:not(:last-child) {
+    //     margin-bottom: 30px;
+    // }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap; 
+        margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin: 0;
     }
 }
 
@@ -57,4 +77,26 @@
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: $primary-bg-color;
+
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 0px 30px 0px 0px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }

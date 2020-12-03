@@ -8,6 +8,10 @@
     & .icon-cross {
         display: none;
     }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-btn.is-open .icon-cross {
@@ -19,17 +23,19 @@
 }
 
 .menu-container {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    border-top: solid #ECECEC 1px;
-
     background-color: $primary-bg-color;
 
-    &.is-open {
-        display: block;
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        border-top: solid #ECECEC 1px;
+
+        &.is-open {
+            display: block;
+        }
     }
 }
 

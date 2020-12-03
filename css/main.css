@@ -57,6 +57,7 @@ body {
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -212,6 +213,13 @@ footer .logo {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .feature-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .feature {
   margin-bottom: 10px;
   text-align: center;
@@ -224,6 +232,18 @@ footer .logo {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .feature {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature {
+    text-align: start;
+  }
+}
+
 .feature-text {
   margin-bottom: 0px;
   font-family: Roboto, sans-serif;
@@ -233,8 +253,46 @@ footer .logo {
   letter-spacing: 0.03em;
 }
 
-.feature-flexbox li:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .feature-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-flexbox {
+    display: flex;
+    margin: 0;
+  }
+}
+
+.feature-item {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 0px 30px 0px 0px;
+  }
+  .feature-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .feature-item::before {
@@ -267,6 +325,12 @@ footer .logo {
 .specialization-section {
   display: none;
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .specialization-section {
+    display: block;
+  }
 }
 
 .specialization {
@@ -312,22 +376,17 @@ footer .logo {
   color: #212121;
 }
 
-.team {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.187;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
 .section-team {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #F5F4FA;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-title {
@@ -336,6 +395,25 @@ footer .logo {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.178;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.667;
+  }
+}
+
+.team {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -351,14 +429,49 @@ footer .logo {
   letter-spacing: 0.03em;
 }
 
-.team-flexbox > li:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .team-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-flexbox {
+    display: flex;
+    margin: 0;
+  }
 }
 
 .team-list {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 0px 30px 0px 0px;
+  }
+  .team-list:last-child {
+    margin-right: 0;
+  }
 }
 
 .social {
@@ -410,6 +523,12 @@ footer .logo {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
 .menu-btn.is-open .icon-cross {
   display: block;
 }
@@ -419,17 +538,21 @@ footer .logo {
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  border-top: solid #ECECEC 1px;
   background-color: #FFFFFF;
 }
 
-.menu-container.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border-top: solid #ECECEC 1px;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
 }
 
 header {

@@ -1,6 +1,11 @@
 .feature-section {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .feature {
@@ -14,6 +19,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $title-text-color;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .feature-text {
@@ -27,10 +40,40 @@
 }
 
 .feature-flexbox {
-//     // display: flex;
 
-    & li:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap; 
+        margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin: 0;
+    }
+}
+
+.feature-item {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 0px 30px 0px 0px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
