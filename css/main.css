@@ -730,17 +730,62 @@ header {
   background-color: #2196F3;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-flexbox {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-flexbox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+
 .address-container {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-container {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin-right: 70px;
+  }
 }
 
 .join-container {
   padding-top: 12px;
 }
 
+@media screen and (min-width: 768px) {
+  .join-container {
+    padding-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-container {
+    padding-top: 12px;
+    margin-right: 93px;
+  }
+}
+
 .social--footer {
   padding: 0;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .social--footer {
+    margin-bottom: 0;
+  }
 }
 
 .join {
@@ -755,8 +800,29 @@ header {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .subscribe-container {
   padding-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-container {
+    padding-top: 0;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-container {
+    padding-top: 12px;
+    width: 358px;
+  }
 }
 
 .subscribe-container input {
@@ -776,6 +842,12 @@ header {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2F303A;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-container input {
+    margin-right: 12px;
+  }
 }
 
 .subscribe-container input::placeholder {
