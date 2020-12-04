@@ -160,6 +160,12 @@ footer .logo {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  footer .logo {
+    text-align: start;
+  }
+}
+
 .logo-header {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -693,6 +699,12 @@ header {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: start;
+  }
+}
+
 .contacts-footer {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -706,6 +718,12 @@ header {
 
 .contacts-footer + .contacts-footer {
   margin-top: 9px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-footer {
+    text-align: start;
+  }
 }
 
 .address-flexbox {
@@ -800,6 +818,12 @@ header {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 1200px) {
+  .join {
+    text-align: start;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-tablet {
     display: flex;
@@ -821,7 +845,6 @@ header {
 @media screen and (min-width: 1200px) {
   .subscribe-container {
     padding-top: 12px;
-    width: 358px;
   }
 }
 
@@ -847,6 +870,7 @@ header {
 @media screen and (min-width: 1200px) {
   .subscribe-container input {
     margin-right: 12px;
+    width: 358px;
   }
 }
 
@@ -905,6 +929,38 @@ header {
 .form-footer form {
   width: 100%;
   text-align: center;
+}
+
+.subscribe-container {
+  padding-top: 12px;
+}
+
+.subscribe-container input {
+  margin-right: 12px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2F303A;
+}
+
+.subscribe-container input::placeholder {
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .backdrop {
