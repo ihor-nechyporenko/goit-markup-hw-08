@@ -3,15 +3,22 @@
 .buttons-container {
     padding-top: 60px;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
 }
 
 .filter {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -15px;
-    // justify-content: center;
-    // padding-top: 94px;
-    // padding-bottom: 50px;
 
     & li:not(:last-child) {
         margin-right: 8px;
@@ -19,6 +26,14 @@
 
     & li {
         margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+
+        & li {
+            margin-bottom: 0;
+        }
     }
 }
 
