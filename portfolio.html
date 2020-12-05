@@ -77,7 +77,12 @@
                     <li class="portfolio-list">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./imeges/portfolio/img-1.jpg" width="450" height="294" alt="Страница сайта на ноутбуке">  
+                                <picture>
+                                    <source srcset="./imeges/desktop/portfolio-1.jpg 1x, ./imeges/desktop/portfolio-1@2x.jpg 2x," media="(min-width: 1200px)"/>
+                                    <source srcset="./imeges/tablet/portfolio-1.jpg 1x, ./imeges/tablet/portfolio-1@2x.jpg 2x," media="(min-width: 768px)"/>
+                                    <source srcset="./imeges/mobile/portfolio-1.jpg 1x, ./imeges/mobile/portfolio-1@2x.jpg 2x," media="(max-width: 767px)"/>                            
+                                    <img src="./imeges/desktop/portfolio-1.jpg" width="450" alt="Страница сайта на ноутбуке">
+                                </picture>  
                                 <div class="portfolio-overlay">
                                     <p class="hidden-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -90,7 +95,12 @@
                     <li class="portfolio-list">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./imeges/portfolio/img-2.jpg" width="450" height="294" alt="Два баскетболиста с мячом">
+                                <picture>
+                                    <source srcset="./imeges/desktop/portfolio-2.jpg 1x, ./imeges/desktop/portfolio-2@2x.jpg 2x," media="(min-width: 1200px)"/>
+                                    <source srcset="./imeges/tablet/portfolio-2.jpg 1x, ./imeges/tablet/portfolio-2@2x.jpg 2x," media="(min-width: 768px)"/>
+                                    <source srcset="./imeges/mobile/portfolio-2.jpg 1x, ./imeges/mobile/portfolio-2@2x.jpg 2x," media="(max-width: 767px)"/>                            
+                                    <img src="./imeges/desktop/portfolio-2.jpg" width="450" alt="Два баскетболиста с мячом">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="hidden-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -103,7 +113,12 @@
                     <li class="portfolio-list">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-thumb">
-                                <img src="./imeges/portfolio/img-3.jpg" width="450" height="294" alt="Логотип ресторана - название на фоне рыбы">
+                                <picture>
+                                    <source srcset="./imeges/desktop/portfolio-3.jpg 1x, ./imeges/desktop/portfolio-3@2x.jpg 2x," media="(min-width: 1200px)"/>
+                                    <source srcset="./imeges/tablet/portfolio-3.jpg 1x, ./imeges/tablet/portfolio-3@2x.jpg 2x," media="(min-width: 768px)"/>
+                                    <source srcset="./imeges/mobile/portfolio-3.jpg 1x, ./imeges/mobile/portfolio-3@2x.jpg 2x," media="(max-width: 767px)"/>                            
+                                    <img src="./imeges/desktop/portfolio-3.jpg" width="450" alt="Логотип ресторана - название на фоне рыбы">
+                                </picture>
                                 <div class="portfolio-overlay">
                                     <p class="hidden-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -197,63 +212,66 @@
 
     <footer id="contacts" class="footer">
         <div class="container footer-flexbox">
-            <div class="address-container">
-                <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
-                <address class="address-flexbox">
-                    <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-                    <a href="mailto:info@devstudio.com" class="contacts-footer">info@devstudio.com</a>
-                    <a href="tel:+380961111111" class="contacts-footer">+38 096 111 11 11</a>
-                </address>
-            </div>
-        
-            <div class="join-container">
-                <p class="join">Присоединяйтесь</p>
-                <ul class="list social">
-                    <li>
-                        <a href="" class="our-social-links">
-                            <svg class="social-icons">
-                                <use href="./imeges/icons/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="our-social-links">
-                            <svg class="social-icons">
-                                <use href="./imeges/icons/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="our-social-links">
-                            <svg class="social-icons">
-                                <use href="./imeges/icons/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="our-social-links">
-                            <svg class="social-icons">
-                                <use href="./imeges/icons/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="subscribe-container">
-                <p class="join">Подпишитесь на рассылку</p>
-                <div class="form-footer">
-                    <form>
-                        <input type="email" name="e-mail" placeholder="E-mail">
-                        <button class="subscribe-btn">Подписаться
-                            <svg class="icon-send" width="24" height="24">
-                                <use href='./imeges/icons/sprite.svg#icon-send'></use>
-                            </svg>
-                        </button>
-                    </form>
+            <div class="tablet-flexbox">
+                <div class="address-container">
+                    <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+                    <address class="address-flexbox">
+                        <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+                        <a href="mailto:info@devstudio.com" class="contacts-footer">info@devstudio.com</a>
+                        <a href="tel:+380961111111" class="contacts-footer">+38 096 111 11 11</a>
+                    </address>
+                </div>
+            
+                <div class="join-container">
+                    <p class="join">Присоединяйтесь</p>
+                    <ul class="list social social--footer">
+                        <li>
+                            <a href="" class="our-social-links">
+                                <svg class="social-icons">
+                                    <use href="./imeges/icons/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="our-social-links">
+                                <svg class="social-icons">
+                                    <use href="./imeges/icons/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="our-social-links">
+                                <svg class="social-icons">
+                                    <use href="./imeges/icons/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="our-social-links">
+                                <svg class="social-icons">
+                                    <use href="./imeges/icons/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
+
+            <div class="subscribe-tablet">
+                <div class="subscribe-container">
+                    <p class="join">Подпишитесь на рассылку</p>
+                    <div class="form-footer">
+                        <form class="form-flex">
+                                <input type="email" name="e-mail" placeholder="E-mail">
+                                <button class="subscribe-btn">Подписаться
+                                    <svg class="icon-send" width="24" height="24">
+                                        <use href='./imeges/icons/sprite.svg#icon-send'></use>
+                                    </svg>
+                                </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     
