@@ -1055,6 +1055,12 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .tablet-flexbox {
+    margin-bottom: 0;
+  }
+}
+
 .address-container {
   margin-bottom: 60px;
 }
