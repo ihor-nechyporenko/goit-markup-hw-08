@@ -7,6 +7,15 @@
 
     color: $accent-color;
     text-decoration: none;
+
+    @media screen and (max-width: 767px) {
+        padding: 16px 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 footer .logo {
@@ -15,27 +24,39 @@ footer .logo {
 
     @media screen and (min-width: 1200px) {
         text-align: start;
+        font-size: 26px;
+        line-height: 1.19;
     }
 }
 
 .logo-header {
     font-family: $raleway-font, sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
 
     color: $title-text-color;
     text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .logo-footer {
     font-family: $raleway-font, sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     
     text-decoration: none;
     color: $primary-bg-color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }

@@ -1,8 +1,11 @@
 .form {
-    // width: 448px;
     width: 370px;
     margin: 40px;;
     z-index: 1;
+
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+    }
 }
 
 .form-field {
@@ -102,11 +105,14 @@ textarea {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
-    // line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: $title-text-color;
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .form-checkbox {
@@ -121,13 +127,16 @@ textarea {
 
         font-family: $roboto-font, sans-serif;
         font-weight: 400;
-        // font-size: 14px;
-        // line-height: 1.71;
         font-size: 12px;
         line-height: 1.167;
         letter-spacing: 0.03em;
 
         color: $primary-text-color;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     & a {
