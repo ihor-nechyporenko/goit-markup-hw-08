@@ -771,12 +771,10 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .line {
-    display: flex;
-    border: 1px solid #ECECEC;
-    flex-grow: 1;
-  }
+.line {
+  display: flex;
+  border: 1px solid #ECECEC;
+  flex-grow: 1;
 }
 
 /* Current page */
