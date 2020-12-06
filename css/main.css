@@ -1515,7 +1515,7 @@ textarea:focus {
 
 .custom-checkbox {
   display: block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 7px;
   background-image: url(../imeges/icons/check.svg);
